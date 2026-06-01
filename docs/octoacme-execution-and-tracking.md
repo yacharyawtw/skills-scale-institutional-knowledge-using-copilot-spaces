@@ -23,6 +23,23 @@ Guidance for managing day-to-day execution and tracking progress toward project 
 - Security scanning in CI
 - Manual QA for feature acceptance when needed
 
+## Definition of Done (DoD) Validation
+Before moving any item to **Done**, teams validate it against the Definition of Done created during planning.
+
+### How to Validate DoD During Execution
+1. **Developer self-check**: confirm every DoD checklist item is addressed in the PR description or linked task.
+2. **Reviewer validation**: verify evidence (approvals, passing CI/tests, scan results, documentation links) before approving merge.
+3. **QA/PM confirmation**: confirm acceptance criteria, manual QA expectations, and unresolved risks are handled or explicitly tracked.
+4. **Board status update**: only move work to `Done` after merge/deploy criteria are met and evidence is captured in the issue/PR.
+
+### DoD Validation Checklist Before Marking Complete
+- [ ] Acceptance criteria are fully met
+- [ ] Required code reviews are approved
+- [ ] CI checks (tests/lint/security) are passing
+- [ ] QA validation is complete or not required (and recorded)
+- [ ] Documentation and release notes are updated when applicable
+- [ ] Outstanding risks/follow-ups are captured with owner and due date
+
 ## Reporting & Metrics
 - Track velocity and burndown
 - Monitor success metrics identified in the Project One-pager
