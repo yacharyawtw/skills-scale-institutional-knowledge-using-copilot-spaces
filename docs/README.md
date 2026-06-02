@@ -2,13 +2,22 @@
 
 This `docs/` folder is the entry point for OctoAcme's project management approach. It gives team members a shared source of truth for how work is initiated, planned, delivered, released, and improved over time.
 
-OctoAcme uses a lifecycle-based methodology focused on customer value, clear ownership, and continuous learning. Work moves through five connected phases: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**. Teams align early on goals and success metrics, execute in small validated increments, and capture lessons learned to improve future delivery.
-
 ## Table of Contents
+- [OctoAcme Project Management Overview](#octoAcme-project-management-overview)
 - [Process Phases at a Glance](#process-phases-at-a-glance)
 - [Key Workflows, Roles, Communication, and Quality Practices](#key-workflows-roles-communication-and-quality-practices)
 - [Core Principles and Values](#core-principles-and-values)
 - [Process Documentation Index](#process-documentation-index)
+
+## OctoAcme Project Management Overview
+
+OctoAcme follows a structured, lifecycle-based approach to project management that emphasizes customer value, iterative delivery, and clear ownership. The methodology spans five key phases: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**. During Initiation, teams validate business needs and create a lightweight One-pager that captures the problem statement, goals, success metrics, stakeholders, and initial risks. This stage serves as a decision gate—work only moves forward to Planning once success metrics are clear, stakeholders are aligned, and team availability is confirmed. This front-loaded clarity reduces downstream surprises and ensures alignment across the organization.
+
+The Planning phase transforms approved initiatives into actionable backlogs and delivery schedules. Teams conduct a kickoff meeting, break work into shippable increments with clear acceptance criteria, estimate scope using T-shirt sizing or story points, and define a **Definition of Done (DoD)** that establishes a consistent quality bar. A critical aspect of OctoAcme planning is explicit identification of dependencies, risks, and integration points—captured in a Risk Register that tracks likelihood, impact, mitigation strategies, and ownership. Release plans and milestone maps create visibility into timelines, and the structured backlog ensures that every item has an owner, clear acceptance criteria, and a planned release target.
+
+During Execution and Tracking, teams operate with a consistent rhythm: daily standups (15 minutes) focused on progress and blockers, weekly delivery syncs showing status and flagged risks, and demos at sprint or milestone completion. Work flows through a project board with columns—Backlog, Ready, In Progress, In Review, QA, Done—and every item is validated against the DoD before marking complete. Quality is embedded throughout: unit and integration tests run in CI, security scanning is mandatory, small PRs (≤400 lines) are encouraged, and at least one approval is required before merge. The DoD Validation Checklist ensures developers self-check their work, reviewers verify evidence, and QA/PM confirm acceptance criteria and risk handling.
+
+Release and post-project activities formalize the deployment process and capture continuous improvement. Pre-release requirements include passing CI/security scans, drafted release notes, and documented rollback plans. Teams conduct post-release smoke tests and stakeholder announcements, with clear escalation and incident response playbooks for failures. After each sprint, release, or milestone, OctoAcme runs a retrospective to capture what went well, what could improve, and generates 2–3 prioritized action items. This embedded learning cycle, combined with clear roles (Project Manager, Product Manager, Developers, QA, Stakeholders), regular communication cadences, and a single source of truth in the project repository, enables OctoAcme to deliver consistently while building institutional knowledge and psychological safety across teams.
 
 ## Process Phases at a Glance
 1. **Initiation**: Validate the business need, define the problem and success metrics, identify stakeholders, and decide go/no-go for planning.
